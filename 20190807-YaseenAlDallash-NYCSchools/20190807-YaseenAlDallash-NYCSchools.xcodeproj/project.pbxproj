@@ -26,6 +26,13 @@
 		1F02DDF222FB607C0017BDEE /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F02DDE522FB607C0017BDEE /* SFUIText-Bold.ttf */; };
 		1F02DDF322FB607C0017BDEE /* SFUIText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F02DDE622FB607C0017BDEE /* SFUIText-Light.ttf */; };
 		1F02DDF422FB607C0017BDEE /* SFUIText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F02DDE722FB607C0017BDEE /* SFUIText-BoldItalic.ttf */; };
+		1F02DDFD22FB64140017BDEE /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDF522FB64140017BDEE /* UIButton+Extension.swift */; };
+		1F02DDFE22FB64140017BDEE /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDF622FB64140017BDEE /* UITableViewCell+Extension.swift */; };
+		1F02DDFF22FB64140017BDEE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDF722FB64140017BDEE /* UIView+Extension.swift */; };
+		1F02DE0122FB64140017BDEE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDF922FB64140017BDEE /* String+Extension.swift */; };
+		1F02DE0222FB64140017BDEE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDFA22FB64140017BDEE /* UIColor+Extension.swift */; };
+		1F02DE0322FB64140017BDEE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDFB22FB64140017BDEE /* UITableView+Extension.swift */; };
+		1F02DE0622FB83D70017BDEE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0522FB83D70017BDEE /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,13 @@
 		1F02DDE522FB607C0017BDEE /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
 		1F02DDE622FB607C0017BDEE /* SFUIText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.ttf"; sourceTree = "<group>"; };
 		1F02DDE722FB607C0017BDEE /* SFUIText-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1F02DDF522FB64140017BDEE /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		1F02DDF622FB64140017BDEE /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		1F02DDF722FB64140017BDEE /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1F02DDF922FB64140017BDEE /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		1F02DDFA22FB64140017BDEE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1F02DDFB22FB64140017BDEE /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		1F02DE0522FB83D70017BDEE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +209,12 @@
 		1F02DDD622FB601B0017BDEE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1F02DDF922FB64140017BDEE /* String+Extension.swift */,
+				1F02DDF522FB64140017BDEE /* UIButton+Extension.swift */,
+				1F02DDFA22FB64140017BDEE /* UIColor+Extension.swift */,
+				1F02DDFB22FB64140017BDEE /* UITableView+Extension.swift */,
+				1F02DDF622FB64140017BDEE /* UITableViewCell+Extension.swift */,
+				1F02DDF722FB64140017BDEE /* UIView+Extension.swift */,
 				1F02DDDB22FB607B0017BDEE /* UIFont+Extension.swift */,
 			);
 			path = Extension;
@@ -203,6 +223,7 @@
 		1F02DDD722FB60280017BDEE /* LoggerAndDebuging */ = {
 			isa = PBXGroup;
 			children = (
+				1F02DE0522FB83D70017BDEE /* Logger.swift */,
 			);
 			path = LoggerAndDebuging;
 			sourceTree = "<group>";
@@ -375,8 +396,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F02DE0122FB64140017BDEE /* String+Extension.swift in Sources */,
+				1F02DDFF22FB64140017BDEE /* UIView+Extension.swift in Sources */,
 				1F02DDE822FB607C0017BDEE /* UIFont+Extension.swift in Sources */,
+				1F02DE0222FB64140017BDEE /* UIColor+Extension.swift in Sources */,
+				1F02DDFE22FB64140017BDEE /* UITableViewCell+Extension.swift in Sources */,
+				1F02DE0622FB83D70017BDEE /* Logger.swift in Sources */,
+				1F02DDFD22FB64140017BDEE /* UIButton+Extension.swift in Sources */,
 				1F02DD5922FB42F90017BDEE /* ViewController.swift in Sources */,
+				1F02DE0322FB64140017BDEE /* UITableView+Extension.swift in Sources */,
 				1F02DD5722FB42F90017BDEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
