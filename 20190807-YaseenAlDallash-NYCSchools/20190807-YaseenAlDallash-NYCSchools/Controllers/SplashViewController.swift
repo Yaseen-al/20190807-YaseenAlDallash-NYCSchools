@@ -10,13 +10,23 @@ import UIKit
 
 class SplashViewController: UIViewController {
 
-    private let logo = UIImageView(image: UIImage(named: ""))
+    private var logo: UILabel = {
+        let label = UILabel()
+        label.text = "NYC Schools"
+        label.font = .custom(name: .semiBold, size: 24)
+        label.textAlignment = .center
+        return label
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        setupLogo()
+    }
+    
+    func setupLogo() {
         view.addSubview(logo)
-        logo.center = view.center
+        Snap.fill(view: logo, in: view, with: UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15))
     }
 
 }

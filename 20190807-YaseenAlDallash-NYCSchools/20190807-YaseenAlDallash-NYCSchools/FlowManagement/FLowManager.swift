@@ -10,6 +10,5 @@ import UIKit
 
 
 protocol FlowManager: class {
-    func route(to controller: UIViewController)
-    func route(to navigationController: UINavigationController)
+    func route(to newVC: UIViewController, with delay: TimeInterval)
 }

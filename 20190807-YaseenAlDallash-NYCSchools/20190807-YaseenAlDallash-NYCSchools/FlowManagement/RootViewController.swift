@@ -10,7 +10,8 @@ import UIKit
 
 //https://medium.com/@stasost/ios-root-controller-navigation-3625eedbbff
 
-class RootViewController: UIViewController {
+/// Handles routing the flow and switching window's root viewcontroller by changing the `RootViewController`'s child.
+class RootViewController: UIViewController, FlowManager {
     
     private var current: UIViewController
     
@@ -26,14 +27,15 @@ class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        self.addChildViewController(current)
+        addChildViewController(current)
+        // For Demonestration it will launch `DashBoardViewController` but can add a login controller and then authenticate then route to
+        // Proper flow.
+        route(to: DashBoardViewController(), with: 3.0)
     }
     
     func setupUI() {
         view.backgroundColor = .white
-        
     }
-    
     
     func route(to newVC: UIViewController, with delay: TimeInterval = 0.0){
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
@@ -43,20 +45,4 @@ class RootViewController: UIViewController {
             self?.current = newVC
         }
     }
-}
-
-
-extension UIViewController {
-    
-    public func addChildViewController(_ viewController: UIViewController,
-                         frame: CGRect? = nil) {
-        self.addChild(viewController)
-        self.view.addSubview(viewController.view)
-        viewController.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        viewController.didMove(toParent: self)
-        
-        guard let frame = frame else { return }
-        viewController.view.frame = frame
-    }
-    
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F02DD5722FB42F90017BDEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DD5622FB42F90017BDEE /* AppDelegate.swift */; };
-		1F02DD5922FB42F90017BDEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DD5822FB42F90017BDEE /* ViewController.swift */; };
+		1F02DD5922FB42F90017BDEE /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DD5822FB42F90017BDEE /* DashBoardViewController.swift */; };
 		1F02DD5E22FB42FB0017BDEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F02DD5D22FB42FB0017BDEE /* Assets.xcassets */; };
 		1F02DD6122FB42FB0017BDEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F02DD5F22FB42FB0017BDEE /* LaunchScreen.storyboard */; };
 		1F02DD6C22FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DD6B22FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsTests.swift */; };
@@ -37,6 +37,8 @@
 		1F02DE0C22FB869F0017BDEE /* FLowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0922FB869E0017BDEE /* FLowManager.swift */; };
 		1F02DE0D22FB869F0017BDEE /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0A22FB869E0017BDEE /* AppDelegate+Extension.swift */; };
 		1F02DE0F22FB86F40017BDEE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0E22FB86F40017BDEE /* SplashViewController.swift */; };
+		1F02DE1322FB8FD30017BDEE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE1222FB8FD30017BDEE /* UIViewController+Extension.swift */; };
+		1F02DE1522FB900C0017BDEE /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE1422FB900C0017BDEE /* Snap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +61,7 @@
 /* Begin PBXFileReference section */
 		1F02DD5322FB42F90017BDEE /* 20190807-YaseenAlDallash-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20190807-YaseenAlDallash-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F02DD5622FB42F90017BDEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F02DD5822FB42F90017BDEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F02DD5822FB42F90017BDEE /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		1F02DD5D22FB42FB0017BDEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F02DD6022FB42FB0017BDEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F02DD6222FB42FB0017BDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +95,8 @@
 		1F02DE0922FB869E0017BDEE /* FLowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLowManager.swift; sourceTree = "<group>"; };
 		1F02DE0A22FB869E0017BDEE /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		1F02DE0E22FB86F40017BDEE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		1F02DE1222FB8FD30017BDEE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1F02DE1422FB900C0017BDEE /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +189,7 @@
 		1F02DD8522FB434F0017BDEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1F02DD5822FB42F90017BDEE /* ViewController.swift */,
+				1F02DD5822FB42F90017BDEE /* DashBoardViewController.swift */,
 				1F02DE0E22FB86F40017BDEE /* SplashViewController.swift */,
 			);
 			path = Controllers;
@@ -194,6 +198,7 @@
 		1F02DD8622FB435D0017BDEE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1F02DE1422FB900C0017BDEE /* Snap.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				1F02DDF622FB64140017BDEE /* UITableViewCell+Extension.swift */,
 				1F02DDF722FB64140017BDEE /* UIView+Extension.swift */,
 				1F02DDDB22FB607B0017BDEE /* UIFont+Extension.swift */,
+				1F02DE1222FB8FD30017BDEE /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -419,13 +425,15 @@
 				1F02DE0122FB64140017BDEE /* String+Extension.swift in Sources */,
 				1F02DDFF22FB64140017BDEE /* UIView+Extension.swift in Sources */,
 				1F02DDE822FB607C0017BDEE /* UIFont+Extension.swift in Sources */,
+				1F02DE1322FB8FD30017BDEE /* UIViewController+Extension.swift in Sources */,
 				1F02DE0B22FB869F0017BDEE /* RootViewController.swift in Sources */,
 				1F02DE0222FB64140017BDEE /* UIColor+Extension.swift in Sources */,
 				1F02DE0F22FB86F40017BDEE /* SplashViewController.swift in Sources */,
+				1F02DE1522FB900C0017BDEE /* Snap.swift in Sources */,
 				1F02DDFE22FB64140017BDEE /* UITableViewCell+Extension.swift in Sources */,
 				1F02DE0622FB83D70017BDEE /* Logger.swift in Sources */,
 				1F02DDFD22FB64140017BDEE /* UIButton+Extension.swift in Sources */,
-				1F02DD5922FB42F90017BDEE /* ViewController.swift in Sources */,
+				1F02DD5922FB42F90017BDEE /* DashBoardViewController.swift in Sources */,
 				1F02DE0322FB64140017BDEE /* UITableView+Extension.swift in Sources */,
 				1F02DD5722FB42F90017BDEE /* AppDelegate.swift in Sources */,
 				1F02DE0D22FB869F0017BDEE /* AppDelegate+Extension.swift in Sources */,
