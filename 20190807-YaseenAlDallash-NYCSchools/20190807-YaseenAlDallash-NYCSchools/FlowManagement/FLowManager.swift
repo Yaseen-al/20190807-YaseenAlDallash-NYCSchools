@@ -1,0 +1,15 @@
+//
+//  FLowManager.swift
+//  YourBank
+//
+//  Created by Yaseen Al Dallash on 8/1/19.
+//  Copyright © 2019 Yaseen Al Dallash. All rights reserved.
+//
+
+import UIKit
+
+
+protocol FlowManager: class {
+    func route(to controller: UIViewController)
+    func route(to navigationController: UINavigationController)
+}

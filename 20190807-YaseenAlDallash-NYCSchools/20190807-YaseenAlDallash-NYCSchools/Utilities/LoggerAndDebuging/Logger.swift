@@ -18,6 +18,7 @@ enum LoggEventType: String {
     case severe = "[🔥]"
 }
 
+/// Hanldes logging information for the App during debugging sessions only
 class Logger {
     // 1. The date formatter
     static var dateFormat = "yyyy-MM-dd hh:mm:ssSSS"
@@ -63,5 +64,4 @@ class Logger {
         Logger.log(url, eventType: .information)
         Logger.log(params, eventType: .information)
     }
-    
 }

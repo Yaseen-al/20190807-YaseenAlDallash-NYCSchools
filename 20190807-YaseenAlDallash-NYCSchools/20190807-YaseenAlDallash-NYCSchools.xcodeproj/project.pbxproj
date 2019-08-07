@@ -33,6 +33,10 @@
 		1F02DE0222FB64140017BDEE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDFA22FB64140017BDEE /* UIColor+Extension.swift */; };
 		1F02DE0322FB64140017BDEE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDFB22FB64140017BDEE /* UITableView+Extension.swift */; };
 		1F02DE0622FB83D70017BDEE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0522FB83D70017BDEE /* Logger.swift */; };
+		1F02DE0B22FB869F0017BDEE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0822FB869E0017BDEE /* RootViewController.swift */; };
+		1F02DE0C22FB869F0017BDEE /* FLowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0922FB869E0017BDEE /* FLowManager.swift */; };
+		1F02DE0D22FB869F0017BDEE /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0A22FB869E0017BDEE /* AppDelegate+Extension.swift */; };
+		1F02DE0F22FB86F40017BDEE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE0E22FB86F40017BDEE /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		1F02DDFA22FB64140017BDEE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1F02DDFB22FB64140017BDEE /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		1F02DE0522FB83D70017BDEE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		1F02DE0822FB869E0017BDEE /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		1F02DE0922FB869E0017BDEE /* FLowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLowManager.swift; sourceTree = "<group>"; };
+		1F02DE0A22FB869E0017BDEE /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		1F02DE0E22FB86F40017BDEE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,7 @@
 		1F02DD5522FB42F90017BDEE /* 20190807-YaseenAlDallash-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				1F02DE0722FB863B0017BDEE /* FlowManagement */,
 				1F02DD8822FB442C0017BDEE /* Models */,
 				1F02DD8722FB436B0017BDEE /* Utilities */,
 				1F02DD8422FB433C0017BDEE /* SupportingFiles */,
@@ -177,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				1F02DD5822FB42F90017BDEE /* ViewController.swift */,
+				1F02DE0E22FB86F40017BDEE /* SplashViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -252,6 +262,16 @@
 				1F02DDE122FB607C0017BDEE /* SFUIText-SemiboldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1F02DE0722FB863B0017BDEE /* FlowManagement */ = {
+			isa = PBXGroup;
+			children = (
+				1F02DE0A22FB869E0017BDEE /* AppDelegate+Extension.swift */,
+				1F02DE0922FB869E0017BDEE /* FLowManager.swift */,
+				1F02DE0822FB869E0017BDEE /* RootViewController.swift */,
+			);
+			path = FlowManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,13 +419,17 @@
 				1F02DE0122FB64140017BDEE /* String+Extension.swift in Sources */,
 				1F02DDFF22FB64140017BDEE /* UIView+Extension.swift in Sources */,
 				1F02DDE822FB607C0017BDEE /* UIFont+Extension.swift in Sources */,
+				1F02DE0B22FB869F0017BDEE /* RootViewController.swift in Sources */,
 				1F02DE0222FB64140017BDEE /* UIColor+Extension.swift in Sources */,
+				1F02DE0F22FB86F40017BDEE /* SplashViewController.swift in Sources */,
 				1F02DDFE22FB64140017BDEE /* UITableViewCell+Extension.swift in Sources */,
 				1F02DE0622FB83D70017BDEE /* Logger.swift in Sources */,
 				1F02DDFD22FB64140017BDEE /* UIButton+Extension.swift in Sources */,
 				1F02DD5922FB42F90017BDEE /* ViewController.swift in Sources */,
 				1F02DE0322FB64140017BDEE /* UITableView+Extension.swift in Sources */,
 				1F02DD5722FB42F90017BDEE /* AppDelegate.swift in Sources */,
+				1F02DE0D22FB869F0017BDEE /* AppDelegate+Extension.swift in Sources */,
+				1F02DE0C22FB869F0017BDEE /* FLowManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

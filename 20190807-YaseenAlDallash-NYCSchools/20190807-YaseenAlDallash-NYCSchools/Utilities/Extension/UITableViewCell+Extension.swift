@@ -2,7 +2,7 @@
 //  UITableViewCell+Extension.swift
 //  YourBank
 //
-//  Created by Yaseen Al Dallash on 7/30/19.
+//  Created by Yaseen Al Dallash on 8/7/19.
 //  Copyright © 2019 Yaseen Al Dallash. All rights reserved.
 //
 
