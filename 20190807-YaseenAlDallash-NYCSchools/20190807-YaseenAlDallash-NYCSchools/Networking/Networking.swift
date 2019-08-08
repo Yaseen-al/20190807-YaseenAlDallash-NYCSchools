@@ -9,14 +9,18 @@
 import Foundation
 import Alamofire
 
+
+enum NetworingErros{
+    case invalidURL
+}
+
 struct Networking {
     
-    static func request<T: Decodable>(from endPoint: EndPointType,
+    static func request<T: Decodable>(from endPoint: EndPoint,
                                       completion: @escaping (Result<T, Error>)->Void) {
         
-        let request = AF.request(endPoint.getAbsoluteURL(), method: endPoint.httpMethod, parameters: endPoint.parameters, encoding: endPoint.parameterEncoding, headers: nil, interceptor: nil)
+        let request = AF.request(endPoint.absoluteURI, method: endPoint.httpMethod, parameters: endPoint.parameters, encoding: endPoint.parameterEncoding, headers: nil, interceptor: nil)
         Logger.log(request, eventType: .information)
-        request.validate()
         
         let completion: (DataResponse<T>)->Void = { dataResponse in
             completion(dataResponse.result)
@@ -26,15 +30,30 @@ struct Networking {
     }
     
     
-    static func request<T: Decodable>(from endPoint: EndPointType,
+    static func request<T: Decodable>(from endPoint: EndPoint,
                                       completion: @escaping (DataResponse<T>)->Void) {
         
-        let request = AF.request(endPoint.getAbsoluteURL(), method: endPoint.httpMethod, parameters: endPoint.parameters, encoding: endPoint.parameterEncoding, headers: nil, interceptor: nil)
+        let request = AF.request(endPoint.absoluteURI, method: endPoint.httpMethod, parameters: endPoint.parameters, encoding: endPoint.parameterEncoding, headers: nil, interceptor: nil)
         Logger.log(request, eventType: .information)
-        request.validate()
 
         let response = request.responseDecodable(completionHandler: completion)
         Logger.log(response, eventType: .information)
     }
     
+    static func requestDef<T: Decodable>(from endPoint: EndPoint, completion: @escaping((Result<T, Error>)->Void) ) {
+        
+        let session = URLSession(configuration: .default)
+        session.dataTask(with: endPoint.absoluteURI) { (data, response, error) in
+            guard let safeData = data else {
+                Logger.log("No Data avialable", eventType: .error)
+                return
+            }
+            do {
+                let response = try JSONDecoder().decode(T.self, from: safeData)
+                completion(Result.success(response))
+            } catch let error {
+                completion(Result.failure(error))
+            }
+        }.resume()
+    }
 }

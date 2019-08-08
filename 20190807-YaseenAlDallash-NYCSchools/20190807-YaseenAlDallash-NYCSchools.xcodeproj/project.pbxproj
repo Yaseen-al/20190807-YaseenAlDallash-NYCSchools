@@ -42,6 +42,10 @@
 		1F02DE1522FB900C0017BDEE /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DE1422FB900C0017BDEE /* Snap.swift */; };
 		1F113A2922FC8DFF00B2EDAB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A2822FC8DFF00B2EDAB /* Endpoint.swift */; };
 		1F113A2B22FC9FC100B2EDAB /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A2A22FC9FC100B2EDAB /* Networking.swift */; };
+		1F113A3122FCC09F00B2EDAB /* HighSchoolDirectoryEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3022FCC09F00B2EDAB /* HighSchoolDirectoryEndPoint.swift */; };
+		1F113A3322FCD09E00B2EDAB /* HighSchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3222FCD09E00B2EDAB /* HighSchoolModel.swift */; };
+		1F113A3822FCDB6100B2EDAB /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3722FCDB6100B2EDAB /* DashboardTableViewCell.swift */; };
+		1F113A3A22FCDB7E00B2EDAB /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F113A3922FCDB7E00B2EDAB /* DashboardTableViewCell.xib */; };
 		34DB843C6121589CEC9D5A16 /* Pods_20190807_YaseenAlDallash_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8951C0E8F4AE17F45537F7 /* Pods_20190807_YaseenAlDallash_NYCSchools.framework */; };
 		E45612C6A0E9A9EA6D09BDB6 /* Pods_20190807_YaseenAlDallash_NYCSchoolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01487FDEB84E3F880B578BA5 /* Pods_20190807_YaseenAlDallash_NYCSchoolsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +110,10 @@
 		1F02DE1422FB900C0017BDEE /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		1F113A2822FC8DFF00B2EDAB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1F113A2A22FC9FC100B2EDAB /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		1F113A3022FCC09F00B2EDAB /* HighSchoolDirectoryEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighSchoolDirectoryEndPoint.swift; sourceTree = "<group>"; };
+		1F113A3222FCD09E00B2EDAB /* HighSchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighSchoolModel.swift; sourceTree = "<group>"; };
+		1F113A3722FCDB6100B2EDAB /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		1F113A3922FCDB7E00B2EDAB /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
 		34D1C9BDC0BC97A68D6EC845 /* Pods_20190807_YaseenAlDallash_NYCSchoolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190807_YaseenAlDallash_NYCSchoolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BAFC3C6DF7E45AC488F63A /* Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F6FDC497464B30DB956AC5A /* Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,7 +179,6 @@
 				1F113A2E22FCAC5600B2EDAB /* Services */,
 				1F113A2722FC8DBE00B2EDAB /* Networking */,
 				1F02DE0722FB863B0017BDEE /* FlowManagement */,
-				1F02DD8822FB442C0017BDEE /* Models */,
 				1F02DD8722FB436B0017BDEE /* Utilities */,
 				1F02DD8422FB433C0017BDEE /* SupportingFiles */,
 				1F02DD8522FB434F0017BDEE /* Controllers */,
@@ -232,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				1F02DDDA22FB60590017BDEE /* Fonts */,
-				1F02DDD922FB604B0017BDEE /* Config */,
 				1F02DDD722FB60280017BDEE /* LoggerAndDebuging */,
 				1F02DDD622FB601B0017BDEE /* Extension */,
 			);
@@ -242,6 +248,7 @@
 		1F02DD8822FB442C0017BDEE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1F113A3222FCD09E00B2EDAB /* HighSchoolModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,13 +274,6 @@
 				1F02DE0522FB83D70017BDEE /* Logger.swift */,
 			);
 			path = LoggerAndDebuging;
-			sourceTree = "<group>";
-		};
-		1F02DDD922FB604B0017BDEE /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		1F02DDDA22FB60590017BDEE /* Fonts */ = {
@@ -317,6 +317,7 @@
 		1F113A2C22FCA87E00B2EDAB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1F113A3722FCDB6100B2EDAB /* DashboardTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +325,7 @@
 		1F113A2D22FCA88300B2EDAB /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				1F113A3922FCDB7E00B2EDAB /* DashboardTableViewCell.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -331,8 +333,18 @@
 		1F113A2E22FCAC5600B2EDAB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1F113A2F22FCC06E00B2EDAB /* Enpoints */,
+				1F02DD8822FB442C0017BDEE /* Models */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1F113A2F22FCC06E00B2EDAB /* Enpoints */ = {
+			isa = PBXGroup;
+			children = (
+				1F113A3022FCC09F00B2EDAB /* HighSchoolDirectoryEndPoint.swift */,
+			);
+			path = Enpoints;
 			sourceTree = "<group>";
 		};
 		AD190F6CF1DDD337E865D77E /* Pods */ = {
@@ -476,6 +488,7 @@
 				1F02DDEE22FB607C0017BDEE /* SFUIText-SemiboldItalic.ttf in Resources */,
 				1F02DDF122FB607C0017BDEE /* SFUIText-HeavyItalic.ttf in Resources */,
 				1F02DDF422FB607C0017BDEE /* SFUIText-BoldItalic.ttf in Resources */,
+				1F113A3A22FCDB7E00B2EDAB /* DashboardTableViewCell.xib in Resources */,
 				1F02DDEF22FB607C0017BDEE /* SFUIText-MediumItalic.ttf in Resources */,
 				1F02DDEA22FB607C0017BDEE /* SFUIText-Regular.ttf in Resources */,
 				1F02DDEB22FB607C0017BDEE /* SFUIText-Medium.ttf in Resources */,
@@ -597,12 +610,15 @@
 			files = (
 				1F02DE0122FB64140017BDEE /* String+Extension.swift in Sources */,
 				1F02DDFF22FB64140017BDEE /* UIView+Extension.swift in Sources */,
+				1F113A3122FCC09F00B2EDAB /* HighSchoolDirectoryEndPoint.swift in Sources */,
 				1F02DDE822FB607C0017BDEE /* UIFont+Extension.swift in Sources */,
 				1F113A2B22FC9FC100B2EDAB /* Networking.swift in Sources */,
 				1F02DE1322FB8FD30017BDEE /* UIViewController+Extension.swift in Sources */,
+				1F113A3822FCDB6100B2EDAB /* DashboardTableViewCell.swift in Sources */,
 				1F02DE0B22FB869F0017BDEE /* RootViewController.swift in Sources */,
 				1F02DE0222FB64140017BDEE /* UIColor+Extension.swift in Sources */,
 				1F02DE0F22FB86F40017BDEE /* SplashViewController.swift in Sources */,
+				1F113A3322FCD09E00B2EDAB /* HighSchoolModel.swift in Sources */,
 				1F02DE1522FB900C0017BDEE /* Snap.swift in Sources */,
 				1F02DDFE22FB64140017BDEE /* UITableViewCell+Extension.swift in Sources */,
 				1F02DE0622FB83D70017BDEE /* Logger.swift in Sources */,

@@ -10,13 +10,15 @@ import Foundation
 import Alamofire
 
 
-protocol EndPointType {
+protocol EndPoint {
     /// The base URL for your endPoint.
     var baseURL: URL { get }
     /// Any additional path to your endpoint
-    var path: String { get }
+    /// Absolute URI that will be used directly for your endpoint
+    var absoluteURI: URL { get }
+    var path: String? { get }
     /// Any key required in endpoint if exists
-    var key: String? { get set}
+    var key: String? { get }
     /// Any token required in endpoint if exists
     var token: String? { get set}
     /// The service name for each specific path in your endpoint
@@ -27,6 +29,8 @@ protocol EndPointType {
     var httpMethod : HTTPMethod { get }
     /// A type used to define how a set of parameters are applied to a `URLRequest`.
     var parameterEncoding: ParameterEncoding { get }
-    /// Get absolute url that will be used directly for your endpoint
-    func getAbsoluteURL() -> URL
+
+}
+
+extension EndPoint {
 }
