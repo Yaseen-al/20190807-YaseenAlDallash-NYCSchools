@@ -17,4 +17,6 @@ target '20190807-YaseenAlDallash-NYCSchools' do
     # Pods for testing
   end
 
+  pod 'Alamofire', '~> 5.0.0-beta.5'
+  
 end
