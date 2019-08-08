@@ -61,9 +61,9 @@ class DashBoardViewController: UITableViewController {
         let cell = DashboardTableViewCell.dequeue(from: tableView, with: indexPath)
         guard let cellUIModel = viewModel.getCellUIModel(for: indexPath) else { return cell }
         cell.configure(titleText: cellUIModel.title,
-                       subtitleText: "",
+                       subtitleText: cellUIModel.subtitle,
                        sideImage: nil,
-                       bodyLabelText: "")
+                       bodyLabelText: cellUIModel.bodyText)
         return cell
     }
 }
@@ -103,7 +103,12 @@ class DashBoardViewModel {
 
 struct DashBoardCellUIModel {
     let title: String
+    let subtitle: String
+    let bodyText: String
     init(highSchoolModel: HighSchoolModel) {
         self.title = highSchoolModel.schoolName?.capitalizeFirstLetter() ?? "High School"
+        let borough = highSchoolModel.borough?.capitalizeFirstLetter() ?? ""
+        self.subtitle = "Borough: \(borough)"
+        self.bodyText = highSchoolModel.overviewParagraph?.capitalizeFirstLetter() ?? ""
     }
 }
