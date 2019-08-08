@@ -19,7 +19,7 @@ class DashBoardViewController: UITableViewController {
         setupNavBar()
         bindViewModel()
         setupTableView()
-        viewModel.retrieveSchoolData()
+        viewModel.getHighSchools()
     }
     
     override func viewDidLayoutSubviews() {
@@ -86,9 +86,15 @@ class DashBoardViewModel {
     }
     
     
-    func retrieveSchoolData() {
+    func getHighSchools() {
         let endPoint = HighSchoolDirectoryEndPoint.fetchAllHighSchools
-        Networking.request(from: endPoint) { [weak self] (result: Result<[HighSchoolModel], Error>) in
+        Networking.request(from: endPoint,
+                           completion: hanldleGetHighSchoolsResponse())
+    }
+    
+    
+    func hanldleGetHighSchoolsResponse() -> (Result<[HighSchoolModel], Error>) -> Void {
+        return { [weak self] (result: Result<[HighSchoolModel], Error>) in
             switch result {
             case .success(let highSchools):
                 self?.highSchools = highSchools
