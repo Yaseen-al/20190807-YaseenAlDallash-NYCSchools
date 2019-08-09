@@ -107,7 +107,7 @@ class DetailedHighSchoolViewModel {
     // MARK: - Properties
     
     let highSchool: HighSchoolModel
-    var schoolSAT: ScholSATModel?
+    var schoolSAT: SchoolSATModel?
     var dataSource: [DetailedHighSchoolDataSourceRerpesentation]
     
     // MARK: - Bindings
@@ -128,7 +128,7 @@ class DetailedHighSchoolViewModel {
         return .init(sectionName: "School Details", sectionDataSource: sectionDataSource)
     }
     
-    func getSATSectionDataSource(_ schoolSATResponse: ScholSATModel) -> DetailedHighSchoolDataSourceRerpesentation {
+    func getSATSectionDataSource(_ schoolSATResponse: SchoolSATModel) -> DetailedHighSchoolDataSourceRerpesentation {
         
         let sectionDataSource: [DetailedHighSchoolRowUIModel]
             = [.init(title: "Math Average score", subTitle: schoolSATResponse.satMathAvgScore),
@@ -139,7 +139,7 @@ class DetailedHighSchoolViewModel {
     
     func getSchoolSAT() {
         guard let dbpn = highSchool.dbn else { return }
-        let endPoint = ScholSATEndPoint.retrieveByDbn(dbn: dbpn)
+        let endPoint = SchoolSATEndPoint.retrieveByDbn(dbn: dbpn)
         Networking.request(from: endPoint,
                            completion: hanldleGetSchoolSATResponse())
     }
@@ -167,8 +167,8 @@ class DetailedHighSchoolViewModel {
     }
     
     
-    func hanldleGetSchoolSATResponse() -> (Result<[ScholSATModel], Error>) -> Void {
-        return { [weak self] (result: Result<[ScholSATModel], Error>) in
+    func hanldleGetSchoolSATResponse() -> (Result<[SchoolSATModel], Error>) -> Void {
+        return { [weak self] (result: Result<[SchoolSATModel], Error>) in
             switch result {
             case .success(let schoolSATResponse):
                 guard let self = self,

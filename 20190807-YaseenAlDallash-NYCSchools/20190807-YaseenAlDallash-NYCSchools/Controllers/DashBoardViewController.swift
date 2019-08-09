@@ -8,6 +8,8 @@
 
 import UIKit
 
+/// Hanldes showing a list of all schools
+/// This could be a map as well and show schools on the map
 class DashBoardViewController: UITableViewController {
     
     var viewModel = DashBoardViewModel()
@@ -34,6 +36,12 @@ class DashBoardViewController: UITableViewController {
         viewModel.reloadDataSource = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
+            }
+        }
+        
+        viewModel.showError = { [weak self] in
+            DispatchQueue.main.async {
+                self?.presenetErrorAlert()
             }
         }
     }
@@ -73,6 +81,18 @@ class DashBoardViewController: UITableViewController {
         self.navigationController?.pushViewController(DetailedHighSchoolTableViewController(viewModel: detailedSchoolViewModel),
                                                       animated: true)
     }
+    
+    // MARK: - Error handling
+    func presenetErrorAlert() {
+        let alertController = UIAlertController(title: "Couldn't Fetch NYC Schools", message: "It migh be a connection issue!!", preferredStyle: .alert)
+        let tryAgainAction = UIAlertAction(title: "Try Again", style: .default) {[weak self] _ in
+            self?.viewModel.getHighSchools()
+        }
+        let dimissAction = UIAlertAction(title: "Cancel", style: .destructive)
+        alertController.addAction(tryAgainAction)
+        alertController.addAction(dimissAction)
+        self.present(alertController, animated: true)
+    }
 }
 
 
@@ -82,6 +102,7 @@ class DashBoardViewModel {
     
     // MARK: - Bindings
     var reloadDataSource: (()->Void)?
+    var showError: (()->Void)?
     
     // MARK: - TableView setup
     func numberOfCell()->Int {
@@ -114,7 +135,7 @@ class DashBoardViewModel {
                 self?.highSchools = highSchools
                 self?.reloadDataSource?()
             case .failure(let error):
-                // Display error
+                self?.showError?()
                 Logger.log(error, eventType: .error)
             }
         }

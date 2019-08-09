@@ -38,12 +38,13 @@ class RootViewController: UIViewController, FlowManager {
         view.backgroundColor = .white
     }
     
-    func route(to newVC: UIViewController, with delay: TimeInterval = 0.0){
+    func route(to newVC: UIViewController, with delay: TimeInterval = 0.0, completion: (()->Void)? = nil){
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
             self?.addChildViewController(newVC)
             self?.current.view.removeFromSuperview()
             self?.current.removeFromParent()
             self?.current = newVC
+            completion?()
         }
     }
 }
