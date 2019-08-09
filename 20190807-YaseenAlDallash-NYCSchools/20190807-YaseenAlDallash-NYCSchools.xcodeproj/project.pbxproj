@@ -46,6 +46,11 @@
 		1F113A3322FCD09E00B2EDAB /* HighSchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3222FCD09E00B2EDAB /* HighSchoolModel.swift */; };
 		1F113A3822FCDB6100B2EDAB /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3722FCDB6100B2EDAB /* DashboardTableViewCell.swift */; };
 		1F113A3A22FCDB7E00B2EDAB /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F113A3922FCDB7E00B2EDAB /* DashboardTableViewCell.xib */; };
+		1F113A3C22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3B22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift */; };
+		1F113A3E22FCEB2200B2EDAB /* ScholSATModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3D22FCEB2200B2EDAB /* ScholSATModel.swift */; };
+		1F113A4022FCEB5600B2EDAB /* ScholSATEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3F22FCEB5600B2EDAB /* ScholSATEndPoint.swift */; };
+		1F113A4422FCF77C00B2EDAB /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F113A4322FCF77C00B2EDAB /* HeaderView.xib */; };
+		1F113A4622FCF79600B2EDAB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A4522FCF79600B2EDAB /* HeaderView.swift */; };
 		34DB843C6121589CEC9D5A16 /* Pods_20190807_YaseenAlDallash_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8951C0E8F4AE17F45537F7 /* Pods_20190807_YaseenAlDallash_NYCSchools.framework */; };
 		E45612C6A0E9A9EA6D09BDB6 /* Pods_20190807_YaseenAlDallash_NYCSchoolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01487FDEB84E3F880B578BA5 /* Pods_20190807_YaseenAlDallash_NYCSchoolsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -114,6 +119,11 @@
 		1F113A3222FCD09E00B2EDAB /* HighSchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighSchoolModel.swift; sourceTree = "<group>"; };
 		1F113A3722FCDB6100B2EDAB /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		1F113A3922FCDB7E00B2EDAB /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
+		1F113A3B22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedHighSchoolTableViewController.swift; sourceTree = "<group>"; };
+		1F113A3D22FCEB2200B2EDAB /* ScholSATModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholSATModel.swift; sourceTree = "<group>"; };
+		1F113A3F22FCEB5600B2EDAB /* ScholSATEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholSATEndPoint.swift; sourceTree = "<group>"; };
+		1F113A4322FCF77C00B2EDAB /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		1F113A4522FCF79600B2EDAB /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		34D1C9BDC0BC97A68D6EC845 /* Pods_20190807_YaseenAlDallash_NYCSchoolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190807_YaseenAlDallash_NYCSchoolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BAFC3C6DF7E45AC488F63A /* Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F6FDC497464B30DB956AC5A /* Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +231,7 @@
 			children = (
 				1F02DD5822FB42F90017BDEE /* DashBoardViewController.swift */,
 				1F02DE0E22FB86F40017BDEE /* SplashViewController.swift */,
+				1F113A3B22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 		1F02DD8622FB435D0017BDEE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1F113A4522FCF79600B2EDAB /* HeaderView.swift */,
 				1F02DE1422FB900C0017BDEE /* Snap.swift */,
 				1F113A2D22FCA88300B2EDAB /* Nibs */,
 				1F113A2C22FCA87E00B2EDAB /* Views */,
@@ -249,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				1F113A3222FCD09E00B2EDAB /* HighSchoolModel.swift */,
+				1F113A3D22FCEB2200B2EDAB /* ScholSATModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,6 +338,7 @@
 		1F113A2D22FCA88300B2EDAB /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				1F113A4322FCF77C00B2EDAB /* HeaderView.xib */,
 				1F113A3922FCDB7E00B2EDAB /* DashboardTableViewCell.xib */,
 			);
 			path = Nibs;
@@ -343,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				1F113A3022FCC09F00B2EDAB /* HighSchoolDirectoryEndPoint.swift */,
+				1F113A3F22FCEB5600B2EDAB /* ScholSATEndPoint.swift */,
 			);
 			path = Enpoints;
 			sourceTree = "<group>";
@@ -481,6 +496,7 @@
 				1F02DD6122FB42FB0017BDEE /* LaunchScreen.storyboard in Resources */,
 				1F02DDEC22FB607C0017BDEE /* SFUIText-Semibold.ttf in Resources */,
 				1F02DD5E22FB42FB0017BDEE /* Assets.xcassets in Resources */,
+				1F113A4422FCF77C00B2EDAB /* HeaderView.xib in Resources */,
 				1F02DDE922FB607C0017BDEE /* SFUIText-LightItalic.ttf in Resources */,
 				1F02DDF022FB607C0017BDEE /* SFUIText-Heavy.ttf in Resources */,
 				1F02DDF322FB607C0017BDEE /* SFUIText-Light.ttf in Resources */,
@@ -619,16 +635,20 @@
 				1F02DE0222FB64140017BDEE /* UIColor+Extension.swift in Sources */,
 				1F02DE0F22FB86F40017BDEE /* SplashViewController.swift in Sources */,
 				1F113A3322FCD09E00B2EDAB /* HighSchoolModel.swift in Sources */,
+				1F113A4022FCEB5600B2EDAB /* ScholSATEndPoint.swift in Sources */,
 				1F02DE1522FB900C0017BDEE /* Snap.swift in Sources */,
 				1F02DDFE22FB64140017BDEE /* UITableViewCell+Extension.swift in Sources */,
+				1F113A3C22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift in Sources */,
 				1F02DE0622FB83D70017BDEE /* Logger.swift in Sources */,
 				1F02DDFD22FB64140017BDEE /* UIButton+Extension.swift in Sources */,
 				1F02DD5922FB42F90017BDEE /* DashBoardViewController.swift in Sources */,
 				1F02DE0322FB64140017BDEE /* UITableView+Extension.swift in Sources */,
 				1F02DD5722FB42F90017BDEE /* AppDelegate.swift in Sources */,
 				1F02DE0D22FB869F0017BDEE /* AppDelegate+Extension.swift in Sources */,
+				1F113A3E22FCEB2200B2EDAB /* ScholSATModel.swift in Sources */,
 				1F113A2922FC8DFF00B2EDAB /* Endpoint.swift in Sources */,
 				1F02DE0C22FB869F0017BDEE /* FLowManager.swift in Sources */,
+				1F113A4622FCF79600B2EDAB /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,7 +30,8 @@ class RootViewController: UIViewController, FlowManager {
         addChildViewController(current)
         // For Demonestration it will launch `DashBoardViewController` but can add a login controller and then authenticate then route to
         // Proper flow.
-        route(to: DashBoardViewController(), with: 3.0)
+        let nav = UINavigationController(rootViewController: DashBoardViewController())
+        route(to: nav, with: 3.0)
     }
     
     func setupUI() {

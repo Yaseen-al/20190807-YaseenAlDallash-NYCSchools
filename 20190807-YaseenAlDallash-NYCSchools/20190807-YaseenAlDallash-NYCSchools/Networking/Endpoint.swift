@@ -17,10 +17,6 @@ protocol EndPoint {
     /// Absolute URI that will be used directly for your endpoint
     var absoluteURI: URL { get }
     var path: String? { get }
-    /// Any key required in endpoint if exists
-    var key: String? { get }
-    /// Any token required in endpoint if exists
-    var token: String? { get set}
     /// The service name for each specific path in your endpoint
     var serviceName: String { get }
     /// Header params for your endpoint

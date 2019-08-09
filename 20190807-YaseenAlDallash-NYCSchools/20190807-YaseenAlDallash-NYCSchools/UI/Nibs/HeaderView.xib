@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="YourBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="481" height="390"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFe-r7-Dk6" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="481" height="390"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WVF-sm-EFU" userLabel="ContentStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="481" height="390"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WVF-sm-EFU" secondAttribute="trailing" id="AaM-tq-ynW"/>
+                        <constraint firstItem="WVF-sm-EFU" firstAttribute="top" secondItem="JFe-r7-Dk6" secondAttribute="top" id="FVP-2p-Oc3"/>
+                        <constraint firstItem="WVF-sm-EFU" firstAttribute="leading" secondItem="JFe-r7-Dk6" secondAttribute="leading" id="WAX-sc-aWt"/>
+                        <constraint firstAttribute="bottom" secondItem="WVF-sm-EFU" secondAttribute="bottom" id="hwy-Gi-wRI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JFe-r7-Dk6" secondAttribute="bottom" id="9ve-ya-ga9"/>
+                <constraint firstItem="JFe-r7-Dk6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="K7b-XU-j7J"/>
+                <constraint firstAttribute="trailing" secondItem="JFe-r7-Dk6" secondAttribute="trailing" id="NkW-X1-AHB"/>
+                <constraint firstItem="JFe-r7-Dk6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vc3-fs-FLl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentStackView" destination="WVF-sm-EFU" id="gL3-vb-Bdu"/>
+            </connections>
+            <point key="canvasLocation" x="93.478260869565219" y="-100.44642857142857"/>
+        </view>
+    </objects>
+</document>

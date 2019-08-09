@@ -34,19 +34,6 @@ extension HighSchoolDirectoryEndPoint: EndPoint {
         return nil
     }
     
-    var key: String? {
-        return nil
-    }
-    
-    var token: String? {
-        get {
-            return nil
-        }
-        set {
-            
-        }
-    }
-    
     var serviceName: String {
         switch self {
         case .fetchAllHighSchools:

@@ -19,8 +19,14 @@ struct Networking {
     static func request<T: Decodable>(from endPoint: EndPoint,
                                       completion: @escaping (Result<T, Error>)->Void) {
         
-        let request = AF.request(endPoint.absoluteURI, method: endPoint.httpMethod, parameters: endPoint.parameters, encoding: endPoint.parameterEncoding, headers: nil, interceptor: nil)
-        Logger.log(request, eventType: .information)
+        let request = AF.request(endPoint.absoluteURI, method: endPoint.httpMethod,
+                                 parameters: endPoint.parameters,
+                                 encoding: endPoint.parameterEncoding,
+                                 headers: nil, interceptor: nil)
+        
+        Logger.logServiceInfo(serviceName: endPoint.serviceName,
+                              url: endPoint.absoluteURI,
+                              params: endPoint.parameters ?? [:])
         
         let completion: (DataResponse<T>)->Void = { dataResponse in
             completion(dataResponse.result)
@@ -33,8 +39,13 @@ struct Networking {
     static func request<T: Decodable>(from endPoint: EndPoint,
                                       completion: @escaping (DataResponse<T>)->Void) {
         
-        let request = AF.request(endPoint.absoluteURI, method: endPoint.httpMethod, parameters: endPoint.parameters, encoding: endPoint.parameterEncoding, headers: nil, interceptor: nil)
-        Logger.log(request, eventType: .information)
+        let request = AF.request(endPoint.absoluteURI,
+                                 method: endPoint.httpMethod,
+                                 parameters: endPoint.parameters,
+                                 encoding: endPoint.parameterEncoding,
+                                 headers: nil, interceptor: nil)
+        
+        Logger.logServiceInfo(serviceName: endPoint.serviceName, url: endPoint.absoluteURI, params: endPoint.parameters ?? [:])
 
         let response = request.responseDecodable(completionHandler: completion)
         Logger.log(response, eventType: .information)

@@ -64,20 +64,34 @@ class DashBoardViewController: UITableViewController {
                        subtitleText: cellUIModel.subtitle,
                        sideImage: nil,
                        bodyLabelText: cellUIModel.bodyText)
+        cell.selectionStyle = .none
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let detailedSchoolViewModel = viewModel.getDetailedHighSchoolViewModel(from: indexPath) else { return }
+        self.navigationController?.pushViewController(DetailedHighSchoolTableViewController(viewModel: detailedSchoolViewModel),
+                                                      animated: true)
     }
 }
 
 
 class DashBoardViewModel {
+    // MARK: - Properties
+    var highSchools = [HighSchoolModel]()
     
     // MARK: - Bindings
-    var highSchools = [HighSchoolModel]()
     var reloadDataSource: (()->Void)?
     
     // MARK: - TableView setup
     func numberOfCell()->Int {
         return highSchools.count
+    }
+    
+    
+    func getDetailedHighSchoolViewModel(from indexPath: IndexPath) -> DetailedHighSchoolViewModel? {
+        guard indexPath.row < highSchools.count else { return nil }
+        return DetailedHighSchoolViewModel(highSchool: highSchools[indexPath.row])
     }
     
     func getCellUIModel(for indexPath: IndexPath) -> DashBoardCellUIModel? {
