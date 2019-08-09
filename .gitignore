@@ -64,8 +64,8 @@ DerivedData
 .build/
 
 # CocoaPods
-Pods/
-*Podfile.lock
+#Pods/
+#*Podfile.lock
 
 # Carthage
 #
