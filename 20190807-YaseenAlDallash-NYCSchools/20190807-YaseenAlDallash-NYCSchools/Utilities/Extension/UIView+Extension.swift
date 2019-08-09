@@ -31,7 +31,7 @@ extension UIView {
     ///
     /// Note:
     ///
-    /// In swift 5 this issue is solved and you can cast directly without doing this work around
+    /// In Xcode 11 this issue is solved and you can cast directly without doing this work around while the compiler can compile it 
     ///
     ///https://stackoverflow.com/questions/30816139/returning-self-in-swift
     private class func loadAndCast<T>(owner: Any?, nibName: String, bundle: Bundle, options: [UINib.OptionsKey : Any]?) -> T {
