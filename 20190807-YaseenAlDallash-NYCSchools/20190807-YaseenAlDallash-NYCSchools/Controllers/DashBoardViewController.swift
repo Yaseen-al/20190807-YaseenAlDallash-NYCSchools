@@ -8,6 +8,8 @@
 
 import UIKit
 
+/// Hanldes showing a list of all schools
+/// This could be a map as well and show schools on the map
 class DashBoardViewController: UITableViewController {
     
     var viewModel = DashBoardViewModel()

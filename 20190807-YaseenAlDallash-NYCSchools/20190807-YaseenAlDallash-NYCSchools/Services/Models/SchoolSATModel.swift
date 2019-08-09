@@ -1,5 +1,5 @@
 //
-//  ScholSATModel.swift
+//  SchoolSATModel.swift
 //  20190807-YaseenAlDallash-NYCSchools
 //
 //  Created by Yaseen Al Dallash on 8/8/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ScholSATModel: Codable {
+struct SchoolSATModel: Codable {
     let dbn, schoolName, numOfSatTestTakers, satCriticalReadingAvgScore: String?
     let satMathAvgScore, satWritingAvgScore: String?
     

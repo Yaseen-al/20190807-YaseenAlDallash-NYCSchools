@@ -27,6 +27,13 @@ extension UIView {
         return loadAndCast(owner: owner, nibName: nibName, bundle: bundle, options: options)
     }
     
+    /// Calling this function to load form nib and to cast to `Self`
+    ///
+    /// Note:
+    ///
+    /// In swift 5 this issue is solved and you can cast directly without doing this work around
+    ///
+    ///https://stackoverflow.com/questions/30816139/returning-self-in-swift
     private class func loadAndCast<T>(owner: Any?, nibName: String, bundle: Bundle, options: [UINib.OptionsKey : Any]?) -> T {
         return UINib(nibName: nibName, bundle: bundle).instantiate(withOwner: owner, options: options).first as! T
     }

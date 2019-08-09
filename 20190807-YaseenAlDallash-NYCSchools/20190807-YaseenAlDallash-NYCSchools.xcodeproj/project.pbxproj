@@ -12,7 +12,6 @@
 		1F02DD5922FB42F90017BDEE /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DD5822FB42F90017BDEE /* DashBoardViewController.swift */; };
 		1F02DD5E22FB42FB0017BDEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F02DD5D22FB42FB0017BDEE /* Assets.xcassets */; };
 		1F02DD6122FB42FB0017BDEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F02DD5F22FB42FB0017BDEE /* LaunchScreen.storyboard */; };
-		1F02DD6C22FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DD6B22FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsTests.swift */; };
 		1F02DD7722FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DD7622FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsUITests.swift */; };
 		1F02DDE822FB607C0017BDEE /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02DDDB22FB607B0017BDEE /* UIFont+Extension.swift */; };
 		1F02DDE922FB607C0017BDEE /* SFUIText-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F02DDDC22FB607B0017BDEE /* SFUIText-LightItalic.ttf */; };
@@ -47,10 +46,12 @@
 		1F113A3822FCDB6100B2EDAB /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3722FCDB6100B2EDAB /* DashboardTableViewCell.swift */; };
 		1F113A3A22FCDB7E00B2EDAB /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F113A3922FCDB7E00B2EDAB /* DashboardTableViewCell.xib */; };
 		1F113A3C22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3B22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift */; };
-		1F113A3E22FCEB2200B2EDAB /* ScholSATModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3D22FCEB2200B2EDAB /* ScholSATModel.swift */; };
-		1F113A4022FCEB5600B2EDAB /* ScholSATEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3F22FCEB5600B2EDAB /* ScholSATEndPoint.swift */; };
+		1F113A3E22FCEB2200B2EDAB /* SchoolSATModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3D22FCEB2200B2EDAB /* SchoolSATModel.swift */; };
+		1F113A4022FCEB5600B2EDAB /* SchoolSATEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A3F22FCEB5600B2EDAB /* SchoolSATEndPoint.swift */; };
 		1F113A4422FCF77C00B2EDAB /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F113A4322FCF77C00B2EDAB /* HeaderView.xib */; };
 		1F113A4622FCF79600B2EDAB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A4522FCF79600B2EDAB /* HeaderView.swift */; };
+		1F113A4922FD177500B2EDAB /* RootViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A4822FD177500B2EDAB /* RootViewControllerTests.swift */; };
+		1F113A4C22FD1E7900B2EDAB /* HighSchoolDirectoryEndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F113A4B22FD1E7900B2EDAB /* HighSchoolDirectoryEndPointTests.swift */; };
 		34DB843C6121589CEC9D5A16 /* Pods_20190807_YaseenAlDallash_NYCSchools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8951C0E8F4AE17F45537F7 /* Pods_20190807_YaseenAlDallash_NYCSchools.framework */; };
 		E45612C6A0E9A9EA6D09BDB6 /* Pods_20190807_YaseenAlDallash_NYCSchoolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01487FDEB84E3F880B578BA5 /* Pods_20190807_YaseenAlDallash_NYCSchoolsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -82,7 +83,6 @@
 		1F02DD6022FB42FB0017BDEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F02DD6222FB42FB0017BDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F02DD6722FB42FB0017BDEE /* 20190807-YaseenAlDallash-NYCSchoolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20190807-YaseenAlDallash-NYCSchoolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F02DD6B22FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190807_YaseenAlDallash_NYCSchoolsTests.swift; sourceTree = "<group>"; };
 		1F02DD6D22FB42FC0017BDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F02DD7222FB42FC0017BDEE /* 20190807-YaseenAlDallash-NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20190807-YaseenAlDallash-NYCSchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F02DD7622FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190807_YaseenAlDallash_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
@@ -120,10 +120,12 @@
 		1F113A3722FCDB6100B2EDAB /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		1F113A3922FCDB7E00B2EDAB /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
 		1F113A3B22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedHighSchoolTableViewController.swift; sourceTree = "<group>"; };
-		1F113A3D22FCEB2200B2EDAB /* ScholSATModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholSATModel.swift; sourceTree = "<group>"; };
-		1F113A3F22FCEB5600B2EDAB /* ScholSATEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholSATEndPoint.swift; sourceTree = "<group>"; };
+		1F113A3D22FCEB2200B2EDAB /* SchoolSATModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSATModel.swift; sourceTree = "<group>"; };
+		1F113A3F22FCEB5600B2EDAB /* SchoolSATEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSATEndPoint.swift; sourceTree = "<group>"; };
 		1F113A4322FCF77C00B2EDAB /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1F113A4522FCF79600B2EDAB /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1F113A4822FD177500B2EDAB /* RootViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerTests.swift; sourceTree = "<group>"; };
+		1F113A4B22FD1E7900B2EDAB /* HighSchoolDirectoryEndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighSchoolDirectoryEndPointTests.swift; sourceTree = "<group>"; };
 		34D1C9BDC0BC97A68D6EC845 /* Pods_20190807_YaseenAlDallash_NYCSchoolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20190807_YaseenAlDallash_NYCSchoolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BAFC3C6DF7E45AC488F63A /* Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F6FDC497464B30DB956AC5A /* Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests/Pods-20190807-YaseenAlDallash-NYCSchoolsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +203,8 @@
 		1F02DD6A22FB42FB0017BDEE /* 20190807-YaseenAlDallash-NYCSchoolsTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F02DD6B22FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsTests.swift */,
+				1F113A4A22FD1E4700B2EDAB /* Services */,
+				1F113A4722FD173100B2EDAB /* FlowManagement */,
 				1F02DD6D22FB42FC0017BDEE /* Info.plist */,
 			);
 			path = "20190807-YaseenAlDallash-NYCSchoolsTests";
@@ -261,7 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				1F113A3222FCD09E00B2EDAB /* HighSchoolModel.swift */,
-				1F113A3D22FCEB2200B2EDAB /* ScholSATModel.swift */,
+				1F113A3D22FCEB2200B2EDAB /* SchoolSATModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -357,9 +360,25 @@
 			isa = PBXGroup;
 			children = (
 				1F113A3022FCC09F00B2EDAB /* HighSchoolDirectoryEndPoint.swift */,
-				1F113A3F22FCEB5600B2EDAB /* ScholSATEndPoint.swift */,
+				1F113A3F22FCEB5600B2EDAB /* SchoolSATEndPoint.swift */,
 			);
 			path = Enpoints;
+			sourceTree = "<group>";
+		};
+		1F113A4722FD173100B2EDAB /* FlowManagement */ = {
+			isa = PBXGroup;
+			children = (
+				1F113A4822FD177500B2EDAB /* RootViewControllerTests.swift */,
+			);
+			path = FlowManagement;
+			sourceTree = "<group>";
+		};
+		1F113A4A22FD1E4700B2EDAB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F113A4B22FD1E7900B2EDAB /* HighSchoolDirectoryEndPointTests.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		AD190F6CF1DDD337E865D77E /* Pods */ = {
@@ -635,7 +654,7 @@
 				1F02DE0222FB64140017BDEE /* UIColor+Extension.swift in Sources */,
 				1F02DE0F22FB86F40017BDEE /* SplashViewController.swift in Sources */,
 				1F113A3322FCD09E00B2EDAB /* HighSchoolModel.swift in Sources */,
-				1F113A4022FCEB5600B2EDAB /* ScholSATEndPoint.swift in Sources */,
+				1F113A4022FCEB5600B2EDAB /* SchoolSATEndPoint.swift in Sources */,
 				1F02DE1522FB900C0017BDEE /* Snap.swift in Sources */,
 				1F02DDFE22FB64140017BDEE /* UITableViewCell+Extension.swift in Sources */,
 				1F113A3C22FCE2E600B2EDAB /* DetailedHighSchoolTableViewController.swift in Sources */,
@@ -645,7 +664,7 @@
 				1F02DE0322FB64140017BDEE /* UITableView+Extension.swift in Sources */,
 				1F02DD5722FB42F90017BDEE /* AppDelegate.swift in Sources */,
 				1F02DE0D22FB869F0017BDEE /* AppDelegate+Extension.swift in Sources */,
-				1F113A3E22FCEB2200B2EDAB /* ScholSATModel.swift in Sources */,
+				1F113A3E22FCEB2200B2EDAB /* SchoolSATModel.swift in Sources */,
 				1F113A2922FC8DFF00B2EDAB /* Endpoint.swift in Sources */,
 				1F02DE0C22FB869F0017BDEE /* FLowManager.swift in Sources */,
 				1F113A4622FCF79600B2EDAB /* HeaderView.swift in Sources */,
@@ -656,7 +675,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F02DD6C22FB42FC0017BDEE /* _0190807_YaseenAlDallash_NYCSchoolsTests.swift in Sources */,
+				1F113A4922FD177500B2EDAB /* RootViewControllerTests.swift in Sources */,
+				1F113A4C22FD1E7900B2EDAB /* HighSchoolDirectoryEndPointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,5 +10,5 @@ import UIKit
 
 
 protocol FlowManager: class {
-    func route(to newVC: UIViewController, with delay: TimeInterval)
+func route(to newVC: UIViewController, with delay: TimeInterval, completion: (()->Void)?)
 }

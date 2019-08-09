@@ -1,5 +1,5 @@
 //
-//  ScholSATEndPoint.swift
+//  SchoolSATEndPoint.swift
 //  20190807-YaseenAlDallash-NYCSchools
 //
 //  Created by Yaseen Al Dallash on 8/8/19.
@@ -9,12 +9,12 @@
 import Foundation
 import Alamofire
 
-enum ScholSATEndPoint {
+enum SchoolSATEndPoint {
     case retrieveByDbn(dbn: String)
     case retrieveBySchool(schoolName: String)
 }
 
-extension ScholSATEndPoint: EndPoint {
+extension SchoolSATEndPoint: EndPoint {
     var baseURL: URL {
         guard let url = URL(string: "https://data.cityofnewyork.us/resource/f9bf-2cp4.json") else {
             fatalError()
