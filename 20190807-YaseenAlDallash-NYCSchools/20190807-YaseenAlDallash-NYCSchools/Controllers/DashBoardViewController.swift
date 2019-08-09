@@ -13,6 +13,12 @@ import UIKit
 class DashBoardViewController: UITableViewController {
     
     var viewModel = DashBoardViewModel()
+    
+    lazy var pullToRefreshControl: UIRefreshControl = {
+        let control = UIRefreshControl()
+        control.attributedTitle = NSAttributedString(string: "Fetching NYC Schools")
+        return control
+    }()
 
     // MARK: - ViewLifecycle
     
@@ -57,8 +63,15 @@ class DashBoardViewController: UITableViewController {
     func setupTableView() {
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
+        tableView.refreshControl = pullToRefreshControl
         DashboardTableViewCell.register(to: tableView)
+        pullToRefreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
         UITableViewCell.register(to: tableView, forCellReuseIdentifier: "customCell")
+    }
+    
+    @objc func pullToRefresh(_ sender: UIRefreshControl) {
+        viewModel.getHighSchools()
+        pullToRefreshControl.endRefreshing()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
